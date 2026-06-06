@@ -1,0 +1,48 @@
+{
+  "manifest_version": 3,
+  "name": "SocialCleaner",
+  "version": "1.0.0",
+  "description": "Automate unfollowing pages and accounts across Facebook, Instagram, and Twitter/X.",
+  "author": "NoCodeGeek (https://github.com/NoCodegeek)",
+  "icons": {
+    "16": "icons/icon16.png",
+    "32": "icons/icon32.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "action": {
+    "default_popup": "popup/popup.html",
+    "default_icon": {
+      "16": "icons/icon16.png",
+      "32": "icons/icon32.png",
+      "48": "icons/icon48.png",
+      "128": "icons/icon128.png"
+    }
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://www.facebook.com/pages/*",
+        "https://www.instagram.com/*",
+        "https://twitter.com/*",
+        "https://x.com/*"
+      ],
+      "js": ["content/content.js"],
+      "run_at": "document_idle"
+    }
+  ],
+  "permissions": [
+    "activeTab",
+    "scripting",
+    "tabs"
+  ],
+  "host_permissions": [
+    "https://www.facebook.com/*",
+    "https://www.instagram.com/*",
+    "https://twitter.com/*",
+    "https://x.com/*"
+  ]
+}
