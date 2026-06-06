@@ -1,8 +1,32 @@
 # ⚡ SocialCleaner
 
-> Automate unfollowing pages and accounts across Facebook, Instagram, and Twitter/X.
+## 🌪️ The Feed That Wouldn't End
 
-![Version](https://img.shields.io/badge/version-1.0.0-green)
+Ah yes. 2010.
+
+A simpler time. You were young, optimistic, and absolutely thrilled to like that pizza brand's Facebook page in exchange for a 10% coupon you never used. You followed a motivational quotes page. Then another. Then a celebrity fan page for someone who is now, somehow, a podcaster. Then a local gym you went to twice.
+
+Fast forward to today. Your Facebook feed is an archaeological dig of your past questionable decisions — sponsored posts sandwiched between pages that haven't uploaded since the Obama administration, and a "Daily Inspiration" account that posts the same sunset JPEG every 72 hours.
+
+You decided to clean it up manually. Brave. Noble, even.
+
+Click. Unfollow. Scroll. Click. Unfollow. Scroll. Forty pages down. Four hundred and sixty to go.
+
+You considered just deleting your account. Starting fresh. Faking your own death online.
+
+But then — **SocialCleaner**.
+
+A humble little Chrome extension that does the digital equivalent of hiring someone to clean out your attic while you sit downstairs pretending it isn't happening. It scrolls. It unfollows. It takes polite little breaks so Facebook doesn't get suspicious. It doesn't judge you for following "Minion Memes Official" in 2015. It just quietly, efficiently fixes it.
+
+No drama. No therapy required. Just you, your browser, and an extension doing the work you've been putting off since the fourth season of Game of Thrones.
+
+**SocialCleaner ⚡ — because someone had to.**
+
+*Instagram and Twitter/X support coming soon, for those of you with more bad decisions to undo.*
+
+---
+
+![Version](https://img.shields.io/badge/version-1.0.1-green)
 ![License](https://img.shields.io/badge/license-MIT-blue)
 ![Platform](https://img.shields.io/badge/platform-Chrome-yellow)
 
@@ -93,9 +117,9 @@ socialcleaner-extension/
 │   ├── popup.css              # Styles
 │   └── popup.js               # UI logic
 ├── content/
-│   ├── content.js             # Platform detector & router
+│   ├── content.js             # Platform detector & all platform logic
 │   └── platforms/
-│       ├── facebook.js        # ✅ Facebook logic
+│       ├── facebook.js        # ✅ Facebook (reference copy)
 │       ├── instagram.js       # 🚧 Placeholder
 │       └── twitter.js         # 🚧 Placeholder
 └── icons/
