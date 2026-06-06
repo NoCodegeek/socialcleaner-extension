@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "SocialCleaner",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Automate unfollowing pages and accounts across Facebook, Instagram, and Twitter/X.",
   "author": "NoCodeGeek (https://github.com/NoCodegeek)",
   "icons": {
@@ -25,7 +25,7 @@
   "content_scripts": [
     {
       "matches": [
-        "https://www.facebook.com/pages/*",
+        "https://www.facebook.com/*",
         "https://www.instagram.com/*",
         "https://twitter.com/*",
         "https://x.com/*"
